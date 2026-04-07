@@ -5,11 +5,10 @@ on:
     branches: [ "master" ]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
-
-      - name: install
-        run: cd workspace && npm install
+      - run: npm install eslint
+      - run: npx eslint .
