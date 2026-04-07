@@ -1,2 +1,2 @@
-const noee=3
-console.log(noee);
+const noed=3
+console.log(noed);
