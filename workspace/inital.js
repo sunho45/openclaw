@@ -1,2 +1,2 @@
-const node=3;
+const noe=3;
 console.log(node);
