@@ -5,10 +5,16 @@ on:
     branches: [ "master" ]
 
 jobs:
-  test:
+  lint:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: workspace
 
     steps:
       - uses: actions/checkout@v4
-      - run: npm install eslint
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install
       - run: npx eslint .
