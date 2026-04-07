@@ -1,2 +1,2 @@
-const nod=3
-console.log(nod);
+const node=3
+console.log(node);
