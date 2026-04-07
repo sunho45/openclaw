@@ -1,2 +1,2 @@
-nod=3;
+node=3;
 console.log(node);
